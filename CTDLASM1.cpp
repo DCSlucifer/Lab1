@@ -132,7 +132,6 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
     return dummy.next;
 }
 
-// Function to insert a node at the end of a linked list
 void insert(ListNode*& head, int val) {
     ListNode* newNode = new ListNode(val);
     if (head == NULL) {
@@ -156,7 +155,6 @@ ListNode* createLinkedList(int n) {
     return head;
 }
 
-// Helper function to print a linked list
 void printList(ListNode* node) {
     while (node != NULL) {
         cout << node->val << " -> ";
@@ -200,7 +198,6 @@ public:
 
     SingleLinkedList() : head(nullptr) {}
 
-    // Function to insert a node at the end of the list
     void Insert(int value) {
         Node* newNode = new Node();
         newNode->data = value;
@@ -226,7 +223,6 @@ public:
         cout << "nullptr" << endl;
     }
 
-    // Function to find the intersection of this list with another list
     void GetIntersection(SingleLinkedList L1) {
         Node* Cur = head;
         bool found = false;
